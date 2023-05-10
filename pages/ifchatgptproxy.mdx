@@ -6,9 +6,9 @@
 ## 服务架构
 ![gpt proxy](http://image.iflightit.com/uPic/IIdWpo.jpg)
 
-* **ifchat** 
-* **proxy manager**服务位于 负责接收ifchat发送的gpt请求，将请求的内容保存到
-* **gpt proxy**服务位于国外服务器，负责将gpt openai服务器进行。需支持一键快速部署。
+* **ifchat**为位于国内的chatgpt客户端。
+* **proxy manager**服务为位于国内的proxy管理器，负责接收ifchat发送的gpt请求，并将请求转发到境外。
+* **gpt proxy**服务位于国外服务器，负责与openai服务器进行交互。
 
 ## 服务特性
 * gpt proxy支持一键快速部署。
