@@ -1,5 +1,9 @@
 {
-  "index": "Introduction",
+  "index": "ifCloud简介",
+  "ifsaas": "ifSaas框架",
+  "ifchatgptproxy": "chatgpt代理",
+  "faq": "AI常识",
+  "Embeddings": "Embeddings",
   "about": {
     "title": "About",
     "type": "page"
