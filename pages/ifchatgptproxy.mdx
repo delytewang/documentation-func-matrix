@@ -1,1 +1,17 @@
 # ChatGPT Proxy
+## 目的
+由于OpenAI对中国采取屏蔽政策，正常情况下，中国范围内的IP均无法正常访问OpenAI服务。为达到稳定访问OpenAI服务的目的，考虑在境外可用区内搭建多个ChatGPT中转代理，
+位于国内的GPT应用可通过访问中转代理的方式避免被OpenAI屏蔽。
+
+## 服务架构
+![gpt proxy](http://image.iflightit.com/uPic/IIdWpo.jpg)
+
+* **ifchat** 
+* **proxy manager**服务位于 负责接收ifchat发送的gpt请求，将请求的内容保存到
+* **gpt proxy**服务位于国外服务器，负责将gpt openai服务器进行。需支持一键快速部署。
+
+## 服务特性
+* gpt proxy支持一键快速部署。
+* proxy manager可一键ping所有gpt proxy服务器，获取服务器可用性及访问延迟。
+* proxy manager可记录所有gpt访问，以利于审计及统计分析。
+* proxy manager可控制chatgpt访问限额。
